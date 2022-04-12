@@ -1,0 +1,15 @@
+node:internal/fs/utils:885
+  throw new ERR_INVALID_ARG_TYPE(
+  ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received type number (24350)
+    at Object.writeFileSync (node:fs:2164:5)
+    at writePid (/usr/lib/node_modules/loadbalancer/node_modules/forever/bin/monitor:13:6)
+    at exports.Monitor.<anonymous> (/usr/lib/node_modules/loadbalancer/node_modules/forever/bin/monitor:46:5)
+    at exports.Monitor.EventEmitter.emit (/usr/lib/node_modules/loadbalancer/node_modules/eventemitter2/lib/eventemitter2.js:339:22)
+    at /usr/lib/node_modules/loadbalancer/node_modules/forever-monitor/lib/forever-monitor/monitor.js:172:10
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+Node.js v17.9.0
